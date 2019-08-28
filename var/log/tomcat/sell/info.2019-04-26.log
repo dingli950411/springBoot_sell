@@ -1,0 +1,1446 @@
+【微信支付】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556208041825230464",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556208042",
+  "nonceStr": "FaVv1xaMnQNFTHmH",
+  "packAge": "prepay_id\u003dwx2600004256088427534496b21920790456",
+  "signType": "MD5",
+  "paySign": "FE918C1452F6640BFB34C23CBCB6B665"
+}
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Thu Apr 25 23:58:08 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on EricdeMBP.lan with PID 27503 (/Users/eric/workspace/springboot_sell/target/classes started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 00:01:40 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1248 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 00:01:40 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 3.779 seconds (JVM running for 4.261)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556208142235729102",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556208143",
+  "nonceStr": "29dh2omEpXhcoJfk",
+  "packAge": "prepay_id\u003dwx260002231289605e4c3900002446222210",
+  "signType": "MD5",
+  "paySign": "0F6BF9EBBD0B86967FFB14D770B257E1"
+}
+SQL Error: 0, SQLState: 08S01
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 00:01:40 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on EricdeMBP.lan with PID 30128 (/Users/eric/workspace/springboot_sell/target/classes started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 19:52:01 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1473 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 19:52:01 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.629 seconds (JVM running for 5.312)
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 19:52:01 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on EricdeMBP.lan with PID 30156 (/Users/eric/workspace/springboot_sell/target/classes started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 19:52:15 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1233 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 19:52:15 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 3.6 seconds (JVM running for 4.047)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信网页授权】获取code,result=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd898fcb01713c658&redirect_uri=http%3A%2F%2Flili.natapp1.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2Fsell.com%2F%23%2F&connect_redirect=1#wechat_redirect
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 19:52:15 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on EricdeMBP.lan with PID 30177 (/Users/eric/workspace/springboot_sell/target/classes started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 19:52:41 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1223 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 19:52:41 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 3.604 seconds (JVM running for 4.058)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+【微信网页授权】获取code,result=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx83549c2cbd9c0cc7&redirect_uri=http%3A%2F%2Flili.natapp1.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2Fsell.com%2F%23%2F&connect_redirect=1#wechat_redirect
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 19:52:41 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on EricdeMBP.lan with PID 30187 (/Users/eric/workspace/springboot_sell/target/classes started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 19:53:07 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1231 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 19:53:07 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 3.565 seconds (JVM running for 4.018)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556279631325730520",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556279633",
+  "nonceStr": "HoLw2LlHkg9MDTGy",
+  "packAge": "prepay_id\u003dwx26195353022661a30b945c4c1813000038",
+  "signType": "MD5",
+  "paySign": "2353CDC6CC2EB919696D74E691D1815B"
+}
+【微信支付】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556279631325730520",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 19:53:07 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on EricdeMBP.lan with PID 30757 (/Users/eric/workspace/springboot_sell/target/classes started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 20:19:01 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1436 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 20:19:01 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/notify],methods=[POST]}" onto public void com.imooc.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.467 seconds (JVM running for 5.081)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556281226661279363",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556281228",
+  "nonceStr": "r4a7gr1nPKZVF8XS",
+  "packAge": "prepay_id\u003dwx26202028352814ce8b2c6f212730935193",
+  "signType": "MD5",
+  "paySign": "7727BDB6CCA952A8955965375143EA70"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[YTnBbnsLCFm4oBW3]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556281226661279363]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1A2BABE150E552C5C1F128AC50AA3E46]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426202041]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000299201904267865076061]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[YTnBbnsLCFm4oBW3]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556281226661279363]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1A2BABE150E552C5C1F128AC50AA3E46]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426202041]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000299201904267865076061]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[YTnBbnsLCFm4oBW3]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556281226661279363]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1A2BABE150E552C5C1F128AC50AA3E46]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426202041]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000299201904267865076061]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556281226661279363",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[YTnBbnsLCFm4oBW3]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556281226661279363]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1A2BABE150E552C5C1F128AC50AA3E46]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426202041]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000299201904267865076061]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[2]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[XyZpv2eEZ87aXhpp]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1555216087307741151]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[634830F0E17E893FD9DF09A3F5C4C067]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190425204925]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e2\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000289201904258203485766]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556281463893923345",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556281470",
+  "nonceStr": "Q7FpVjBmdKr3BPNA",
+  "packAge": "prepay_id\u003dwx2620243036740686418271682267978295",
+  "signType": "MD5",
+  "paySign": "915192594CC95057039F49728C019BAF"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[pj46ts0yETu6cDUU]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556281463893923345]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[E82A4EAA9AFFD7D30708E8CA4DABA9D1]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426202434]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000306201904267973315094]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[YTnBbnsLCFm4oBW3]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556281226661279363]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1A2BABE150E552C5C1F128AC50AA3E46]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426202041]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000299201904267865076061]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[pj46ts0yETu6cDUU]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556281463893923345]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[E82A4EAA9AFFD7D30708E8CA4DABA9D1]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426202434]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000306201904267973315094]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[pj46ts0yETu6cDUU]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556281463893923345]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[E82A4EAA9AFFD7D30708E8CA4DABA9D1]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426202434]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000306201904267973315094]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556281463893923345",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[YTnBbnsLCFm4oBW3]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556281226661279363]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1A2BABE150E552C5C1F128AC50AA3E46]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426202041]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000299201904267865076061]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[pj46ts0yETu6cDUU]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556281463893923345]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[E82A4EAA9AFFD7D30708E8CA4DABA9D1]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426202434]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000306201904267973315094]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[Z0JSJXDzS9qhv8Ix]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556279631325730520]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[3DBCB1C8F548B887E5C0F75D91F6A525]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426195359]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000294201904267223154162]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 20:19:01 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on EricdeMBP.lan with PID 30860 (/Users/eric/workspace/springboot_sell/target/classes started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 20:36:04 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1299 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 20:36:04 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/notify],methods=[POST]}" onto public void com.imooc.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 3.703 seconds (JVM running for 4.188)
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a5c8d3f: startup date [Fri Apr 26 20:36:04 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on EricdeMBP.lan with PID 30914 (/Users/eric/workspace/springboot_sell/target/classes started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 20:41:42 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1541 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 20:41:42 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/notify],methods=[POST]}" onto public void com.imooc.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 5.223 seconds (JVM running for 5.853)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556282601609724082",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556282606",
+  "nonceStr": "L9d9tweRb3ogECQV",
+  "packAge": "prepay_id\u003dwx26204326902355dc1276fff62105652264",
+  "signType": "MD5",
+  "paySign": "CE43F95A0D14D62B2D6D8C21A21860D2"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[HaooD1qVpVQgaWJ9]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556282601609724082]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1FC4D969FDF542F7C515B64F0BD388FE]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426204331]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000294201904264985242813]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，订单金额不一致， orderId=1556282601609724082，微信通知金额=0.01，系统金额=0.01
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[HaooD1qVpVQgaWJ9]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556282601609724082]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1FC4D969FDF542F7C515B64F0BD388FE]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426204331]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000294201904264985242813]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，订单金额不一致， orderId=1556282601609724082，微信通知金额=0.01，系统金额=0.01
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[HaooD1qVpVQgaWJ9]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556282601609724082]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1FC4D969FDF542F7C515B64F0BD388FE]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426204331]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000294201904264985242813]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[HaooD1qVpVQgaWJ9]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556282601609724082]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1FC4D969FDF542F7C515B64F0BD388FE]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426204331]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000294201904264985242813]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556282601609724082",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】异步通知，订单金额不一致， orderId=1556282601609724082，微信通知金额=0.01，系统金额=0.01
+【微信支付】异步通知，订单金额不一致， orderId=1556282601609724082，微信通知金额=0.01，系统金额=0.01
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556282601609724082",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556282601609724082",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[HaooD1qVpVQgaWJ9]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556282601609724082]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1FC4D969FDF542F7C515B64F0BD388FE]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426204331]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000294201904264985242813]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，订单金额不一致， orderId=1556282601609724082，微信通知金额=0.01，系统金额=0.01
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 20:41:42 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on EricdeMBP.lan with PID 30970 (/Users/eric/workspace/springboot_sell/target/classes started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:00:06 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1598 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:00:06 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.997 seconds (JVM running for 5.671)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信网页授权】获取code,result=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd898fcb01713c658&redirect_uri=http%3A%2F%2Flili.natapp1.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2Fsell.com%2F%23%2F&connect_redirect=1#wechat_redirect
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:00:06 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on EricdeMBP.lan with PID 30974 (/Users/eric/workspace/springboot_sell/target/classes started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:00:36 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1444 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:00:36 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.463 seconds (JVM running for 5.039)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信网页授权】获取code,result=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx83549c2cbd9c0cc7&redirect_uri=http%3A%2F%2Flili.natapp1.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_base&state=http%3A%2F%2Fsell.com%2F%23%2F&connect_redirect=1#wechat_redirect
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:00:36 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on EricdeMBP.lan with PID 30978 (/Users/eric/workspace/springboot_sell/target/classes started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:01:03 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1392 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:01:03 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.39 seconds (JVM running for 4.981)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556283699826517903",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556283700",
+  "nonceStr": "hbyxaxnSzA1GFFPi",
+  "packAge": "prepay_id\u003dwx262101407397134434ab789c3285534013",
+  "signType": "MD5",
+  "paySign": "5B8DE3EA169612E616CD8D2215203EB2"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[rfXnR94lUxoIhl0o]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556283699826517903]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[634A17E349DA991FAE10489D02AF79F5]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426210152]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000295201904269634331691]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556283699826517903",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:01:03 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on EricdeMBP.lan with PID 30986 (/Users/eric/workspace/springboot_sell/target/classes started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:05:39 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1521 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:05:39 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.674 seconds (JVM running for 5.277)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 45 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556283988284741693",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556283989",
+  "nonceStr": "wCOYwK0mbHcCoKsW",
+  "packAge": "prepay_id\u003dwx262106291477462e72781c0c1302766808",
+  "signType": "MD5",
+  "paySign": "D8C9EB1C940FE8B75D7E4486073D0392"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[dVTxO8GmRZUfbBku]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556283988284741693]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[75648DB77A34369D51E41BF363C30AD4]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426210633]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000301201904262465832384]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556283988284741693",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:05:39 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on EricdeMBP.lan with PID 31009 (/Users/eric/workspace/springboot_sell/target/classes started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:09:55 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1576 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:09:55 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.632 seconds (JVM running for 5.283)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556284230391562388",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556284231",
+  "nonceStr": "HUxWGFp1XGf5EFgn",
+  "packAge": "prepay_id\u003dwx26211031240225b53cb969883246437352",
+  "signType": "MD5",
+  "paySign": "3882873492F7CBBB5ABDC84C0ECE853E"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[lGFQ2VRc83c9g235]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556284230391562388]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[47F19FA4B5C28481EE38A1560356F7E6]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426211043]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000291201904261759800612]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556284230391562388",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[Rp1mq1yL3Qj0yE1V]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556199401143954252]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[8A89370710D8FE8FEC4665AA68145686]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190425213856]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000298201904257087747712]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[HaooD1qVpVQgaWJ9]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556282601609724082]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1FC4D969FDF542F7C515B64F0BD388FE]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426204331]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000294201904264985242813]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[YTnBbnsLCFm4oBW3]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556281226661279363]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1A2BABE150E552C5C1F128AC50AA3E46]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426202041]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000299201904267865076061]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+Starting PayServiceImplTest on EricdeMacBook-Pro.local with PID 31203 (started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b66c0fb: startup date [Fri Apr 26 21:25:11 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1b66c0fb: startup date [Fri Apr 26 21:25:11 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 5.941 seconds (JVM running for 6.73)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request=RefundRequest(payTypeEnum=WXPAY_H5, orderId=1556284230391562388, orderAmount=0.01)
+【微信退款】response=RefundResponse(orderId=1556284230391562388, orderAmount=0.01, outTradeNo=4200000291201904261759800612, refundId=1556284230391562388, outRefundNo=50000400292019042609274224243)
+Closing org.springframework.web.context.support.GenericWebApplicationContext@1b66c0fb: startup date [Fri Apr 26 21:25:11 CST 2019]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on EricdeMacBook-Pro.local with PID 31215 (started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e0e1046: startup date [Fri Apr 26 21:26:33 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3e0e1046: startup date [Fri Apr 26 21:26:33 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 5.214 seconds (JVM running for 5.899)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556284230391562388",
+  "orderAmount": 0.01
+}
+【微信退款】response={
+  "orderId": "1556284230391562388",
+  "orderAmount": 0.01,
+  "outTradeNo": "4200000291201904261759800612",
+  "refundId": "1556284230391562388",
+  "outRefundNo": "50000400292019042609274224243"
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@3e0e1046: startup date [Fri Apr 26 21:26:33 CST 2019]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:09:55 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on EricdeMacBook-Pro.local with PID 31221 (started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@493dfb8e: startup date [Fri Apr 26 21:29:35 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@493dfb8e: startup date [Fri Apr 26 21:29:35 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Started PayServiceImplTest in 6.697 seconds (JVM running for 7.653)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信退款】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556284230391562388",
+  "orderAmount": 0.01
+}
+【微信退款】response={
+  "orderId": "1556284230391562388",
+  "orderAmount": 0.01,
+  "outTradeNo": "4200000291201904261759800612",
+  "refundId": "1556284230391562388",
+  "outRefundNo": "50000400292019042609274224243"
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@493dfb8e: startup date [Fri Apr 26 21:29:35 CST 2019]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on EricdeMacBook-Pro.local with PID 31227 (/Users/eric/workspace/springboot_sell/target/classes started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:32:01 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1503 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:32:01 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.588 seconds (JVM running for 5.254)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556285556226820605",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556285558",
+  "nonceStr": "t5NN1BKPEjtw0bos",
+  "packAge": "prepay_id\u003dwx26213238458222a8d2bc77f40507241851",
+  "signType": "MD5",
+  "paySign": "54EE679F3390F0F7A60EA4A152F191AA"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[04fA3MSO4W0JIppA]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556285556226820605]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[56013A7BB2F6A63A0D451C8AE5335D14]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426213243]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000306201904266665796318]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556285556226820605",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556285631095994672",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556285631",
+  "nonceStr": "4kEi9McIYYXD3xhM",
+  "packAge": "prepay_id\u003dwx26213351504396805d1d8f821645623665",
+  "signType": "MD5",
+  "paySign": "D8FDE735ED3D93346A2F134D43EF9300"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[ixkpMsgU9YViGdZ9]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556285631095994672]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[563C1210CB44E1CD2A1D5CC9CF137EF6]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426213354]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000294201904269111472737]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556285631095994672",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556285862038820043",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556285862",
+  "nonceStr": "rPBkiVwgX4LcpcO9",
+  "packAge": "prepay_id\u003dwx26213742661688c448f03b970493600985",
+  "signType": "MD5",
+  "paySign": "D7FAD6B7E7A93558F418F9ADED963487"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[YVXiBXmfFAiHMCyQ]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556285862038820043]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[665FA1B434320078174832B050336C71]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426213747]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000299201904261376039634]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556285918661537845",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556285919",
+  "nonceStr": "G23Y7aQcUgWC6hKj",
+  "packAge": "prepay_id\u003dwx2621383911366416f34dace42588938260",
+  "signType": "MD5",
+  "paySign": "8F7D6057A85F0D29AFF9FE070A041DB3"
+}
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556285862038820043",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[jA67AL091aPTXiM8]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556285918661537845]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[380E513D09845F85469DE95F6C15E802]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426213843]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000299201904264811437929]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556285918661537845",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:32:01 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on EricdeMacBook-Pro.local with PID 31255 (/Users/eric/workspace/springboot_sell/target/classes started by eric in /Users/eric/workspace/springboot_sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:39:55 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderDetailRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.imooc.repository.ProductInfoRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1418 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a393455: startup date [Fri Apr 26 21:39:55 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.imooc.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.imooc.controller.BuyerOrderController.create(com.imooc.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.imooc.VO.ResultVO<java.util.List<com.imooc.dto.OrderDTO>> com.imooc.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.imooc.VO.ResultVO<com.imooc.dto.OrderDTO> com.imooc.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.imooc.VO.ResultVO com.imooc.controller.BuyerProducterController.list()
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create]}" onto public org.springframework.web.servlet.ModelAndView com.imooc.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.imooc.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.imooc.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.495 seconds (JVM running for 5.143)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556286021857103039",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556286022",
+  "nonceStr": "8lfNnPYo3XgcfFbv",
+  "packAge": "prepay_id\u003dwx262140227379892fc0e60a661006195749",
+  "signType": "MD5",
+  "paySign": "399C6264E0AF0D955F2307AE38EA0452"
+}
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556286022654359762",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556286023",
+  "nonceStr": "D2wiDMAiSclbupKD",
+  "packAge": "prepay_id\u003dwx262140230038974a2d9663722710512664",
+  "signType": "MD5",
+  "paySign": "0FC7C6954A4CBF151D1E5EA00FA804C4"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[mn6XxokRO7JypU7b]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556286022654359762]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[CFBE06A11932FDA6C483673386966AFE]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426214026]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000289201904260549126600]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信退款】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556286022654359762",
+  "orderAmount": 0.01
+}
+【微信退款】response={
+  "orderId": "1556286022654359762",
+  "orderAmount": 0.01,
+  "outTradeNo": "4200000289201904260549126600",
+  "refundId": "1556286022654359762",
+  "outRefundNo": "50000000202019042609305121414"
+}
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556286021857103039",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1556286022654359762",
+  "orderAmount": 0.01,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwcDkm-tlJLd7DT4TmknJ1Wk"
+}
+【微信支付】发起支付，response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1556286082",
+  "nonceStr": "p5P4A5ScSJPBbHPO",
+  "packAge": "prepay_id\u003dwx262141223191522fc0e60a663767690430",
+  "signType": "MD5",
+  "paySign": "49EB7E1F0C349DBB2787E3F77E82249C"
+}
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[HaooD1qVpVQgaWJ9]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556282601609724082]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1FC4D969FDF542F7C515B64F0BD388FE]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426204331]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000294201904264985242813]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[YTnBbnsLCFm4oBW3]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556281226661279363]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1A2BABE150E552C5C1F128AC50AA3E46]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426202041]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000299201904267865076061]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[pj46ts0yETu6cDUU]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556281463893923345]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[E82A4EAA9AFFD7D30708E8CA4DABA9D1]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426202434]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000306201904267973315094]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"
+【微信支付】异步通知，payResponse="\u003cxml\u003e\u003cappid\u003e\u003c![CDATA[wxd898fcb01713c658]]\u003e\u003c/appid\u003e\n\u003cbank_type\u003e\u003c![CDATA[CFT]]\u003e\u003c/bank_type\u003e\n\u003ccash_fee\u003e\u003c![CDATA[1]]\u003e\u003c/cash_fee\u003e\n\u003cfee_type\u003e\u003c![CDATA[CNY]]\u003e\u003c/fee_type\u003e\n\u003cis_subscribe\u003e\u003c![CDATA[Y]]\u003e\u003c/is_subscribe\u003e\n\u003cmch_id\u003e\u003c![CDATA[1483469312]]\u003e\u003c/mch_id\u003e\n\u003cnonce_str\u003e\u003c![CDATA[HaooD1qVpVQgaWJ9]]\u003e\u003c/nonce_str\u003e\n\u003copenid\u003e\u003c![CDATA[oTgZpwcDkm-tlJLd7DT4TmknJ1Wk]]\u003e\u003c/openid\u003e\n\u003cout_trade_no\u003e\u003c![CDATA[1556282601609724082]]\u003e\u003c/out_trade_no\u003e\n\u003cresult_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/result_code\u003e\n\u003creturn_code\u003e\u003c![CDATA[SUCCESS]]\u003e\u003c/return_code\u003e\n\u003csign\u003e\u003c![CDATA[1FC4D969FDF542F7C515B64F0BD388FE]]\u003e\u003c/sign\u003e\n\u003ctime_end\u003e\u003c![CDATA[20190426204331]]\u003e\u003c/time_end\u003e\n\u003ctotal_fee\u003e1\u003c/total_fee\u003e\n\u003ctrade_type\u003e\u003c![CDATA[JSAPI]]\u003e\u003c/trade_type\u003e\n\u003ctransaction_id\u003e\u003c![CDATA[4200000294201904264985242813]]\u003e\u003c/transaction_id\u003e\n\u003c/xml\u003e"

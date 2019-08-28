@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.imooc.dataobject.mapper.ProductCategoryMapper" >
+
+
+    <resultMap id="BaseResultMap" type="com.imooc.dataobject.ProductCategory">
+
+        <id column="category_id" property="categoryId" jdbcType="INTEGER"/>
+        <id column="category_Name" property="categoryName" jdbcType="VARCHAR"/>
+        <id column="category_Type" property="categoryType" jdbcType="INTEGER"/>
+
+    </resultMap>
+
+
+    <select id="selectByCategoryType" resultMap="BaseResultMap" parameterType="int">
+
+        select category_id,category_Name,category_Type from product_category
+        where category_type = #{categoryType}
+    </select>
+
+</mapper>
